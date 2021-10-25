@@ -12,7 +12,7 @@ API_ID = environ.get('API_ID')
 API_HASH = environ.get('API_HASH')
 BOT_TOKEN = environ.get('BOT_TOKEN')
 PDISK_API_KEY = environ.get('PDISK_API_KEY')
-THUMB_URL = environ.get('THUMB_URL', 'https://telegra.ph/file/1181d9119a13988dfe29c.jpg')
+THUMB_URL = environ.get('THUMB_URL', 'https://telegra.ph/file/7f1aad248ecff0f205b8b.jpg')
 CHANNEL = environ.get('CHANNEL')
 bot = Client('pdisk bot',
              api_id=API_ID,
@@ -26,7 +26,7 @@ bot = Client('pdisk bot',
 async def start(bot, message):
     await message.reply(
         f"**Hi {message.chat.first_name}!**\n\n"
-        "I'm Pdisk link converter bot. Just send me link and get converted link of pdisk.\n\n Created By @TheTeleRoid")
+        "I'm Pdisk link converter bot. Just send me link and get converted link of pdisk.\n\n Enjoy")
 
 @bot.on_message(filters.text & filters.private)
 async def pdisk_uploader(bot, message):
